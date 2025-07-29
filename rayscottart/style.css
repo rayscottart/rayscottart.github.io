@@ -3,10 +3,11 @@
    "how to change link color." */
           :root{
                 --header-image: url('img/humbleapostrophe.jpg');
-                --body-bg-image: url('img/emmastare.png');
+                --body-bg-image: url('No');
 
                 /* colors */
-                --content: #43256E;
+                --content: #FCFCFC;
+                --content: 
             }
 
             /* if you have the URL of a font, you can set it below */
@@ -45,12 +46,11 @@
             }
 
             body {
-                font-family: 'Nunito', sans-serif;
+                font-family: Verdana, sans-serif;
                 margin: 0;
-                background-color: #08031A;
-                /* you can delete the line below if you'd prefer to not use an image */
+                background-color: #e6e3e0;
                 
-                color: #fceaff;
+                color: #150913;
                 background-image: var(--body-bg-image);
             background-size: 100%;
             }
@@ -71,18 +71,19 @@
     the other elements, you will need to move that div outside
     of the container */
             #container {
-                max-width: 1100px;
+                max-width: 1300px;
                 /* this is the width of your layout! */
                 /* if you change the above value, scroll to the bottom
       and change the media query according to the comment! */
                 margin: 0 auto;
                 /* this centers the entire page */
+                
             }
 
             /* the area below is for all links on your page
     EXCEPT for the navigation */
             #container a {
-                color: #ED64F5;
+                color: #005432;
                 font-weight: bold;
                 /* if you want to remove the underline
       you can add a line below here that says:
@@ -91,20 +92,23 @@
 
             #header {
                 width: 100%;
-                background-color: #5e4e8c;
+                background-color: #0f3127;
                 /* header color here! */
-                height: 150px;
+                height: 300px;
                 /* this is only for a background image! */
                 /* if you want to put images IN the header, 
       you can add them directly to the <div id="header"></div> element! */
                 background-image: var(--header-image);
                 background-size: 20%;
+            border:#f1f1f1;
+                border-style: solid;
+                border-width: 10px;
             }
 
             /* navigation section!! */
             #navbar {
-                height: 40px;
-                background-color: #13092D;
+                height: 50px;
+                background-color: #0F3127;
                 /* navbar color */
                 width: 100%;
             }
@@ -118,12 +122,12 @@
             }
 
             #navbar li {
-                padding-top: 10px;
+                padding-top: 15px;
             }
 
             /* navigation links*/
             #navbar li a {
-                color: #ED64F5;
+                color: #FCFCFC;
                 /* navbar text color */
                 font-weight: 800;
                 text-decoration: none;
@@ -132,10 +136,61 @@
 
             /* navigation link when a link is hovered over */
             #navbar li a:hover {
-                color: #a49cba;
-                text-decoration: underline;
+                color: #FCFCFC;
+                text-decoration: bold;
             }
+                /* The dropdown container */
+                #dropdown {
+                float: left;
+                overflow: hidden;
+                }
 
+                /* Dropdown button */
+                #dropdown #dropbtn {
+                font-size: 16px;
+                border: none;
+                outline: none;
+                color: #05432e;
+                padding: 14px 16px;
+                background-color: inherit;
+                margin: 0; /* Important for vertical align on mobile phones */
+                }
+
+                /* Add a red background color to navbar links on hover */
+                #navbar a:hover, #dropdown:hover #dropbtn {
+                background-color: #005432;
+                }
+
+                /* Dropdown content (hidden by default) */
+                #dropdown-content {
+                display: none;
+                position: absolute;
+                color: #FCFCFC;
+                background-color: #05432e;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+                }
+
+                 /* Links inside the dropdown */
+                #dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+                }
+
+                /* Add a grey background color to dropdown links on hover */
+                #dropdown-content a:hover {
+                background-color: #ddd;
+                }
+
+                /* Show the dropdown menu on hover */
+                #dropdown:hover #dropdown-content {
+                display: block;
+                }
             #flex {
                 display: flex;
             }
@@ -155,11 +210,15 @@
             /* this is the color of the main content area,
     between the sidebars! */
             main {
-                background-color: #43256E;
+                background-color: #e6e3e0;
+;
                 flex: 1;
                 padding: 20px;
                 order: 2;
-            }
+           border:#f1f1f1;
+                border-style: solid;
+                border-width: 10px;
+             }
 
             /* what's this "order" stuff about??
     allow me to explain!
@@ -169,20 +228,20 @@
 
             * #leftSidebar {
                 order: 1;
-            }
-
-            #rightSidebar {
-                order: 3;
+            border:#f1f1f1;
+                border-style: solid;
+                border-width: 10px;
             }
 
             footer {
-                background-color: #13092D;
-                /* background color for footer */
+                background-color: #0F3127;
+            
                 width: 100%;
-                height: 40px;
-                padding: 10px;
-                text-align: center;
-                /* this centers the footer text */
+                height: 100px;
+                padding: 40px;
+                margin: 0px;
+                text-align: right;
+               
             }
 
             h1,
